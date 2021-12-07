@@ -41,6 +41,32 @@ ReactDOM.render(
 
 ** most elements call ReactDOM.render(element, container) a single time to render the application **
 
+## Two ways to create React component
+
+1. Write a javascript function that returns either jsx or null
+
+```
+const SomeComponent = function() {
+	return (
+		<div className="customClass" />
+		);
+}
+```
+
+2. Other way is to define a React component with ES6 class syntax
+
+```
+class SomeComponent extends React.Component {
+	constructor(props) {
+		super(props);
+	}
+	
+	render() {
+	return ( <div className="customClass" />
+		);
+}
+```
+
 ## Expressions in jsx
 
 ### Rule 1
